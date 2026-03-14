@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duc Nguyen</title>
+    <title>Duc Nguyen - Tech Lead Portal @ FPT Cloud</title>
+    <meta name="description" content="Tech Lead Portal at FPT Cloud">
     <style>
         * {
             margin: 0;
@@ -12,54 +13,91 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: #0a0a0a;
-            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 2rem;
+            line-height: 1.6;
         }
         
-        .container {
-            text-align: center;
-            max-width: 600px;
+        .card {
+            max-width: 500px;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
         
         h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            margin-bottom: 3rem;
-            letter-spacing: -1px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
         }
         
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
+        .title {
+            font-size: 1.125rem;
+            color: #6b7280;
+            margin-bottom: 0.25rem;
+            font-weight: 400;
+        }
+        
+        .company {
+            font-size: 1.125rem;
+            color: #4b5563;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+        }
+        
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 2rem 0;
+        }
+        
+        .contact {
+            margin-top: 2.5rem;
+        }
+        
+        .contact-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
         }
         
         a {
-            color: #fff;
+            color: #2563eb;
             text-decoration: none;
-            font-size: 1.1rem;
-            padding: 1rem;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 8px;
-            transition: all 0.2s;
+            font-size: 1.125rem;
+            transition: color 0.2s;
         }
         
         a:hover {
-            background: rgba(255,255,255,0.05);
-            border-color: rgba(255,255,255,0.4);
+            color: #1d4ed8;
+            text-decoration: underline;
         }
         
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
+            .card {
+                padding: 2rem 1.5rem;
             }
             
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .title,
+            .company,
             a {
                 font-size: 1rem;
             }
@@ -67,13 +105,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <h1>Duc Nguyen</h1>
+        <div class="title">Tech Lead Portal</div>
+        <div class="company">FPT Cloud</div>
         
-        <div class="links">
+        <div class="divider"></div>
+        
+        <div class="contact">
+            <div class="contact-label">Contact</div>
             <a href="mailto:ducna01120@gmail.com">ducna01120@gmail.com</a>
-            <a href="https://github.com/NguyenAnhDuc" target="_blank" rel="noopener">GitHub</a>
-            <a href="/tech-daily/">Tech Daily</a>
         </div>
     </div>
 </body>
